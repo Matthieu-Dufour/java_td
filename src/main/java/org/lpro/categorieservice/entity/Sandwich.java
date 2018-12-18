@@ -18,23 +18,24 @@ import javax.persistence.ManyToOne;
  * @author dufour76u
  */
 @Entity
-public class Categorie {
+public class Sandwich {
     
     @Id
     private String id;
     private String nom;
-    private string descr;
+    private String descr;
     
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "categorieId", nullable = false)
     @JsonIgnore
     private Categorie categorie;
     
-    Categorie(){
+    
+    Sandwich(){
         
     }
 
-    public Categorie(String nom, string descr) {
+    public Sandwich(String nom, String descr) {
         this.nom = nom;
         this.descr = descr;
     }
@@ -55,11 +56,11 @@ public class Categorie {
         this.nom = nom;
     }
 
-    public string getDescr() {
+    public String getDescr() {
         return descr;
     }
 
-    public void setDescr(string descr) {
+    public void setDescr(String descr) {
         this.descr = descr;
     }
 

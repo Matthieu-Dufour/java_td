@@ -7,7 +7,8 @@
 package org.lpro.categorieservice.boundary;
 
 import java.util.List;
-import org.lpro.categorieservice.entity.rch;
+import org.lpro.categorieservice.entity.Sandwich;
+import org.lpro.categorieservice.entity.Categorie;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
